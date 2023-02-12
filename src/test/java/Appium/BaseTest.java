@@ -1,3 +1,5 @@
+package Appium;
+
 import com.google.common.collect.ImmutableMap;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.options.UiAutomator2Options;
@@ -30,8 +32,8 @@ public class BaseTest {
 //        options.setDeviceName("Android Device");
 
         options.setChromedriverExecutable("C:\\Users\\Selim\\chromedriver_win32\\chromedriver.exe");
-        options.setApp("C:\\Users\\Selim\\IdeaProjects\\AppiumBilal\\src\\test\\java\\resources\\ApiDemos-debug.apk");
-//        options.setApp("C:\\Users\\Selim\\IdeaProjects\\AppiumBilal\\src\\test\\java\\resources\\General-store.apk");
+//        options.setApp("C:\\Users\\Selim\\IdeaProjects\\AppiumBilal\\src\\test\\java\\resources\\ApiDemos-debug.apk");
+        options.setApp("C:\\Users\\Selim\\IdeaProjects\\AppiumBilal\\src\\test\\java\\resources\\General-store.apk");
         // Actual automation
         // id, xpath, accessibiltyId, className, androidUIAutomator
         driver = new AndroidDriver(new URL("http://127.0.0.1:4723"), options);
